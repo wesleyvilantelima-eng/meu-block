@@ -1,14 +1,217 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
+    <title>Blog Espaço | Wesley</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #0a0a1a;
+            color: #e0e0ff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a4e, #0d0d2b);
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 20px 40px;
+            border-bottom: 4px solid #6c5ce7;
+            box-shadow: 0 4px 25px rgba(108, 92, 231, 0.4);
+        }
+
+        header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        article {
+            background: #14142b;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 35px;
+            border: 1px solid #2a2a5a;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+        }
+
+        article h2 {
+            color: #a29bfe;
+            margin-bottom: 18px;
+            font-size: 1.55rem;
+        }
+
+        article p {
+            margin-bottom: 16px;
+            color: #d0d0ff;
+        }
+
+        .destaque {
+            background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+            color: white;
+            padding: 2px 9px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* Imagens */
+        .imagem-espaco {
+            width: 100%;
+            border-radius: 12px;
+            margin: 18px 0 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            display: block;
+        }
+
+        .legenda {
+            font-size: 0.9rem;
+            color: #9999cc;
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            color: #888;
+            font-size: 0.95rem;
+            border-top: 1px solid #2a2a5a;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 650px) {
+            header h1 {
+                font-size: 1.9rem;
+            }
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+            .galeria img {
+                height: 200px;
+            }
+        }
+    </style>
 </head>
 <body>
-<h1>Meu blog tech</h1>
-<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>    
-<h2>Meu primeiro post</h2>
-<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+    <header>
+        <h1>🚀 BLOG ESPAÇO</h1>
+        <p>Explorando galáxias, nebulosas, planetas e os mistérios do universo</p>
+    </header>
+
+    <main>
+        <!-- Post de boas-vindas -->
+        <article>
+            <h2>Bem-vindo ao meu blog espacial!</h2>
+            <p>
+                Olá! Eu sou o <strong>Wesley</strong> e este é o meu cantinho para compartilhar 
+                conhecimentos e imagens incríveis sobre o <span class="destaque">espaço</span>.
+            </p>
+            <p>
+                Aqui você vai encontrar posts sobre astronomia, exploração espacial, 
+                galáxias distantes, nebulosas coloridas e muito mais.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=900&q=80" 
+                 alt="Galáxia espiral no espaço profundo" 
+                 class="imagem-espaco">
+            <p class="legenda">Uma bela galáxia espiral vista pelo telescópio</p>
+        </article>
+
+        <!-- Por que o espaço é fascinante -->
+        <article>
+            <h2>🌌 Por que o espaço é tão fascinante?</h2>
+            <p>
+                O universo é o maior laboratório natural que existe. 
+                A luz do Sol demora 8 minutos para chegar até nós. 
+                A estrela mais próxima (Proxima Centauri) demora mais de 4 anos-luz. 
+                E existem centenas de bilhões de galáxias lá fora.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=900&q=80" 
+                 alt="Nebulosa colorida no espaço" 
+                 class="imagem-espaco">
+            <p class="legenda">Nebulosa colorida — berçário de novas estrelas</p>
+
+            <p>
+                Quase todos os elementos do nosso corpo foram forjados no interior 
+                de estrelas que explodiram há bilhões de anos. 
+                <strong>Nós somos poeira de estrelas.</strong>
+            </p>
+        </article>
+
+        <!-- Galeria de imagens -->
+        <article>
+            <h2>📸 Galeria do Universo</h2>
+            <p>Algumas das imagens mais incríveis do espaço:</p>
+
+            <div class="galeria">
+                <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=600&q=80" 
+                     alt="Via Láctea no céu noturno">
+                
+                <img src="https://images.unsplash.com/photo-1465101162946-4377e57754c8?w=600&q=80" 
+                     alt="Espaço profundo com estrelas">
+                
+                <img src="https://images.unsplash.com/photo-1543722530-d2c320435b54?w=600&q=80" 
+                     alt="Galáxia vista de longe">
+                
+                <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?w=600&q=80" 
+                     alt="Nebulosa rosa e roxa">
+            </div>
+        </article>
+
+        <!-- Próximos posts -->
+        <article>
+            <h2>Próximos posts</h2>
+            <p>• Como o telescópio James Webb está reescrevendo a história do universo</p>
+            <p>• Os planetas mais estranhos já descobertos</p>
+            <p>• O que realmente acontece se você cair em um buraco negro</p>
+            <p>• Como observar a Estação Espacial Internacional do seu quintal</p>
+        </article>
+    </main>
+
+    <footer>
+        Feito com 💙 por Wesley • Blog Espaço 2026
+    </footer>
 </body>
 </html>
